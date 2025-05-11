@@ -1,0 +1,107 @@
+
+
+
+---
+
+✅ gaming.html Code:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gaming Tool - ALL TEACH</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #222; color: #fff; margin: 0; padding: 0; }
+    header { background: #111; padding: 20px; text-align: center; font-size: 2rem; }
+    .container { padding: 30px; }
+    .section { background: #333; padding: 20px; margin-bottom: 20px; border-radius: 10px; }
+    h2 { margin-top: 0; }
+    textarea, input { width: 100%; padding: 10px; margin-top: 10px; border: none; border-radius: 5px; }
+    .chat-box { height: 200px; overflow-y: auto; background: #444; padding: 10px; margin-top: 10px; border-radius: 5px; }
+    .code-box { background: #000; color: #0f0; font-family: monospace; padding: 15px; border-radius: 5px; }
+  </style>
+</head>
+<body>
+  <header>Gaming Tool - ALL TEACH</header>
+  <div class="container">
+    
+    <!-- Find our FF Squad -->
+    <div class="section">
+      <h2>Find Our FF Squad (Chat)</h2>
+      <div class="chat-box" id="chatBox">
+        <p><strong>User1:</strong> Anyone wants to play?</p>
+        <p><strong>User2:</strong> Let's go tonight at 10!</p>
+      </div>
+      <input type="text" id="chatInput" placeholder="Type your message..." onkeydown="sendMessage(event)">
+    </div>
+
+    <!-- Redeem Codes -->
+    <div class="section">
+      <h2>Redeem Code</h2>
+      <div class="code-box" id="codeList">
+        <!-- Fake codes will be added via JS -->
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    // Chat functionality (simple frontend demo)
+    function sendMessage(e) {
+      if (e.key === 'Enter') {
+        const input = document.getElementById('chatInput');
+        const chatBox = document.getElementById('chatBox');
+        if (input.value.trim()) {
+          chatBox.innerHTML += `<p><strong>You:</strong> ${input.value}</p>`;
+          input.value = '';
+          chatBox.scrollTop = chatBox.scrollHeight;
+        }
+      }
+    }
+
+    // Fake redeem codes generation
+    function generateCodes() {
+      const codeBox = document.getElementById('codeList');
+      codeBox.innerHTML = '';
+      for (let i = 1; i <= 10; i++) {
+        const code = 'FREE-' + Math.random().toString(36).substring(2, 8).toUpperCase();
+        codeBox.innerHTML += `<p>${code}</p>`;
+      }
+    }
+
+    // Refresh codes daily at 12AM (simulate now)
+    generateCodes();
+  </script>
+</body>
+</html>
+
+
+---
+
+Upload Karne Ka Tarika:
+
+1. GitHub par allteach repository open karo.
+
+
+2. Add file > Create new file pe click karo.
+
+
+3. File name likho: gaming.html
+
+
+4. Upar wala code paste karo.
+
+
+5. “Commit new file” pe click karo.
+
+
+
+Uske baad browser me:
+https://your-username.github.io/allteach/gaming.html open karke preview dekh sakte ho.
+
+
+---
+
+Agle page ke liye ready ho? Instagram Edit banayein?
+
